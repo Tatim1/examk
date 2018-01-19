@@ -1,0 +1,20 @@
+{
+  "name": "examk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tatim",
+  "license": "ISC",
+  "description": ""
+}
