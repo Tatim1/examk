@@ -6,6 +6,9 @@
 	<meta name="description" content="">
 	<title>Title</title>
 	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 	<link rel="stylesheet" href="css/layout.css"> 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -58,14 +61,13 @@
 				<a href="#" class="block__img-link block__img-link--bottom"><img src="img/image22.jpg" alt="" class="block__img-image"></a>
 			</div>
 		</div>
-		<!-- <div class="panel">
+		<div class="panel">
 			<svg class="line" width="800" height="120">
 				<use xlink:href="#line"></use>
-						</svg>
+			</svg>
 			<ul class="panel__menu">
-
 				<li class="panel__menu-item">
-					<div>
+					<div clas="panel__circle">
 						<a href="#" class="panel__menu-link">
 							<svg class="search-p" width="56.531" height="56.53">
 								<use xlink:href="#search-p"></use>
@@ -75,15 +77,27 @@
 					</div>
 				</li>
 				<li class="panel__menu-item">
-					<div></div>
-					<a href="#" class="panel__menu-link"">
-						<svg class="select" width="56.907" height="56.91"><use xlink:href="#select"></use>
-		 			</svg><span>Select Places</span></a></li>
+					<div clas="panel__circle">
+					<a href="#" class="panel__menu-link">
+						<svg class="select" width="56.907" height="56.91">
+							<use xlink:href="#select"></use>
+		 				</svg>
+		 				<span>Select Places</span>
+		 			</a>
+		 			</div>
+		 		</li>
 				<li class="panel__menu-item">
-					<a href="#" class="panel__menu-link""><svg class="book" width="61.31" height="58.79">
-		 				<use xlink:href="#book"></svg><span>Book & Enjoy</span></a></li>
+					<div clas="panel__circle">
+					<a href="#" class="panel__menu-link">
+						<svg class="book" width="61.31" height="58.79">
+		 					<use xlink:href="#book"></use>
+		 				</svg>
+		 				<span>Book & Enjoy</span>
+		 			</a>
+		 			</div>
+		 		</li>
 			</ul>
-		</div> 	 -->
+		</div> 	
 	</section>
 
 	
@@ -99,7 +113,7 @@
 		
 	</section>
 	<section class="section section__content section__content--right" style="background-image: url(img/image4.jpg)">
-		<div class="container container__content container__content--right">
+		<div class="container container__content--right">
 			<div class="flex">
 			<div class="content__desc"> 
 				<p class="content__subtitle">Spain</p>
@@ -110,9 +124,63 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section__centr-cont" style="background-image: url(img/image5.jpg)"></section>
+	<section class="section section__centr-cont" style="background-image: url(img/image5.jpg)">
+
+		
+			
+		<div class="container container__centr-cont">
+				<h2 class="centr-cont__title">What Our Tourist Say</h2>
+				<div class="slider">
+					<div class="slider__photo">
+						<a href="#" class="slider__pic-link">
+							<img src="img/image51.jpg" alt="" class="slider__picture">
+						</a>
+					</div>
+					<div class="slider__text">
+						<span class="slider__name">
+							<a href="#" class="slider__link">Sam Sumon</a>
+						</span>
+						<div class="slider__description">
+							<span class="slider__quote"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+							<p>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
+						</div>
+					</div>
+					<div class="slider__buttons">
+						<button class="slider__btn">
+							<i class="fal fa-angle-left"></i>
+							<!-- <svg width="10.22" height="18">
+								<use xlink:href="#arrow-right"></use>
+							</svg> -->
+						</button>
+						<button class="slider__btn">
+							<i class="fal fa-angle-right"></i>
+							<!-- <svg width="10.13" height="18">
+								<use xlink:href="#arrow-left"></use>
+							</svg> -->
+						</button>
+					</div>
+				</div>
+			</div>			
+
+
+		
+	</section>
 	<footer>
-	<section class="section section__footer"></section>
+	<section class="section section__footer">
+		<div class="container container__footer">
+			<h3 class="footer__title">Bhromaon</h3>
+			<p class="footer__subtitle">Safe Travel Anywhere</p>
+			<div class="socials">
+				<ul class="socials__items">
+					<li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-facebook fa-inverse socials__icon" aria-hidden="true"></i></a></li>
+					<li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-twitter fa-inverse socials__icon" aria-hidden="true"></i></a></li>
+					<li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-linkedin fa-inverse socials__icon active" aria-hidden="true"></i></a></li>
+					<li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-youtube-play fa-inverse socials__icon" aria-hidden="true"></i></a></li>
+					<li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-pinterest fa-inverse socials__icon" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 	</footer>
 
 <svg style="display: none;">
