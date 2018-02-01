@@ -67,34 +67,46 @@
 			</svg>
 			<ul class="panel__menu">
 				<li class="panel__menu-item">
-					<div clas="panel__circle">
-						<a href="#" class="panel__menu-link">
-							<svg class="search-p" width="56.531" height="56.53">
-								<use xlink:href="#search-p"></use>
-							</svg>
-							<span>Search Places</span>
-						</a>
-					</div>
+					<a href="#" class="panel__menu-left">
+						<ul class="panel__link-pos">	
+							<li class="panel__link panel__link--svg">
+								<svg class="search-p" width="66" height="66">
+									<use xlink:href="#search-p"></use>
+								</svg>
+							</li>
+							<li class="panel__link panel__link--text">
+								<span>Search Places</span>
+							</li>
+						</ul>
+					</a>
 				</li>
 				<li class="panel__menu-item">
-					<div clas="panel__circle">
-					<a href="#" class="panel__menu-link">
-						<svg class="select" width="56.907" height="56.91">
-							<use xlink:href="#select"></use>
-		 				</svg>
-		 				<span>Select Places</span>
+					<a href="#" class="panel__menu-centr">
+						<ul class="panel__link-pos">
+							<li class="panel__link panel__link--svg">
+								<svg class="select" width="67" height="67">
+									<use xlink:href="#select"></use>
+		 						</svg>
+		 					</li>
+		 					<li class="panel__link panel__link--text">
+		 						<span>Select Places</span>
+		 					</li>
+		 				</ul>
 		 			</a>
-		 			</div>
 		 		</li>
 				<li class="panel__menu-item">
-					<div clas="panel__circle">
-					<a href="#" class="panel__menu-link">
-						<svg class="book" width="61.31" height="58.79">
-		 					<use xlink:href="#book"></use>
-		 				</svg>
-		 				<span>Book & Enjoy</span>
+					<a href="#" class="panel__menu-right">
+						<ul class="panel__link-pos">
+							<li class="panel__link panel__link--svg">
+								<svg class="book" width="70" height="69">
+		 							<use xlink:href="#book"></use>
+		 						</svg>
+		 					</li>
+		 					<li class="panel__link panel__link--text">
+		 						<span>Book & Enjoy</span>
+		 					</li>
+		 				</ul>
 		 			</a>
-		 			</div>
 		 		</li>
 			</ul>
 		</div> 	
@@ -112,7 +124,7 @@
 		</div>
 		
 	</section>
-	<section class="section section__content section__content--right" style="background-image: url(img/image4.jpg)">
+	<section class="section section__content" style="background-image: url(img/image4.jpg)">
 		<div class="container container__content--right">
 			<div class="flex">
 			<div class="content__desc"> 
@@ -165,9 +177,7 @@
 
 		
 	</section>
-	<footer>
-	<section class="section section__footer">
-		<div class="container container__footer">
+	<footer class="footer">
 			<h3 class="footer__title">Bhromaon</h3>
 			<p class="footer__subtitle">Safe Travel Anywhere</p>
 			<div class="socials">
@@ -179,8 +189,6 @@
 					<li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-pinterest fa-inverse socials__icon" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
-		</div>
-	</section>
 	</footer>
 
 <svg style="display: none;">
@@ -189,6 +197,7 @@
     <style>
       .cls-1 {
         fill: #fff;
+       fill: currentcolor;
         fill-rule: evenodd;
       }
     </style>
@@ -231,6 +240,7 @@
 			      .cls-7 {
 			        fill: #5474fd;
 			        fill-rule: evenodd;
+
 			      }
 			    </style>
 			</defs>
@@ -242,6 +252,10 @@
 			      .cls-3 {
 			        fill: #ff6363;
 			        fill-rule: evenodd;
+					/*fill: currentcolor;*/
+
+			        
+
 			      }
 			    </style>
 			</defs>
