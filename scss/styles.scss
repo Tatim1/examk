@@ -27,15 +27,11 @@ a:active {
 
 html, body {
 	width: 100%;
-	font: 400 16px/1.4 $title-ff;
+	// font: 400 16px/1.4 $title-ff;
 	margin: 0 auto;
 	
 }
 
-// body {
-// 	font: 400 16px/1.4 $title-ff;
-// 	margin: 0 auto;
-// }
 
 .header {
 	padding: 200px 0 0 0;
@@ -44,14 +40,15 @@ html, body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: $accent-color;
+	
 		&__title {
-		font: 700 48px/1.2 700 $title-ff;
+		font: 700 40px/1.1 $title-ff;
 		text-transform: uppercase;
-		letter-spacing: 4px;
+		letter-spacing: 3px;
 	}	
 		&__subtitle {
-		margin-top: 0;
-		font-size: 22px;
+		font: 300 22px/1 $title-ff;
+		letter-spacing: 3px;
 		margin-bottom: 55px;
 	}
 	}
@@ -70,36 +67,31 @@ html, body {
 	&__content {
 	padding: 135px 0 100px 0;
 	width: 1135px;
-		
-	// font: 400 16px/1.6 title-ff;
-	// color: $text-color;
-	&--right {
-		 width: 1135px;
-		
-		.flex {
+		.wrap {
 			width: 550px;
 			margin-left: 550px;
 			
 		}
-	}
+	
 }
 .block {	
 	&__desc {
 	overflow: hidden;
-	text-align: left;
-	width: 480px;
+	text-align: justify;
+	width: 500px;
 	height: 505px;
 	margin: 45px 25px 0px 0px;
-	// font: 400 16px/1.6 title-ff;
+	font: 300 16px/1.6 title-ff;
 	color: $text-color;
 	}
 	&__title {
 	font: 400 36px/1.6 title-ff;
-	color: $text-color;
+	color: $accent-color;
 	}
 	&__text {
-	// font: 400 16px/1.6 title-ff;
-	color: $accent-color;
+	font: 400 16px/2 title-ff;
+	color: $text-color;
+	letter-spacing: 1px;
 	}
 	&__button {
 	@include btn();
@@ -108,14 +100,13 @@ html, body {
 			&:active {
 				@include btn-h-f-a();
 				color: $secondary-color;
-				text-shadow: 2px 2px 4px #fff;
+				text-shadow: 2px 2px 4px $accent-color;
 		}
 	}
 
 	&__card {
 		width: 465px;
 		height: 505px;
-		// position: relative;
 	}
 	&__img-link {
 		text-decoration: none;
@@ -133,7 +124,7 @@ html, body {
 		   -moz-transform: scale(1.5);
 		     -o-transform: scale(1.5);
 		        transform: scale(1.5);
-			box-shadow: 0 0px 20px 10px rgba(47, 42, 39, 2);
+				box-shadow: 0 0px 20px 10px rgba(47, 42, 39, 2);
 
 		}
   }
@@ -164,19 +155,20 @@ html, body {
 	padding: 50px 35px  50px 35px;
 	overflow: hidden;
 	text-align: left;
-	// font: 400 16px/1.6 title-ff;
 	color: $text-color;
 	}
 	&__subtitle {
-	font: 400 26px/1.4 title-ff;
-	// color: $text-color;
+	font: 400 20px/1 title-ff;
+	color: $text-color;
 	}
 	&__title {
-		font: 400 26px/1.4 title-ff;
+		font: 400 20px/1 title-ff;
 		text-transform: uppercase;
+		
 	}
 	&__text {
-		line-height: 2;
+		font: 400 16px/2 title-ff;
+		letter-spacing: 1px;
 	}
 	&__button {
 		@include btn();
@@ -282,13 +274,13 @@ html, body {
 	margin: 0 auto;
 	align-items: center;
 	@include flex-space-between();
-	overflow-x: auto;
+	overflow: auto;
 	}
 
 	&__logo {
 		padding-right: 450px;
 		font: 700 24px/1.4 title-ff;
-		color: #fff;
+		color: $accent-color;
  		letter-spacing: 2px;
 	}
 	&__nav {
@@ -304,7 +296,7 @@ html, body {
 
 	}
 	&__nav-link {
-		 font: 14px/1.4 text-ff;
+		 font: 400 14px/1.2 text-ff;
 		 color: $accent-color;
 		 &:hover,
 		 &:focus,
@@ -315,30 +307,20 @@ html, body {
 }		
 
 .section {
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	&__block {
 	background-size: cover;
-	background-repeat: no-repeat;
 	padding: 100px 0 0 0;
 	}	
 	&__content {
 	padding: 130px 0 100px 0;
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	
 	 }
-	&__centr-cont {
+	&__slider {
 	text-align: center;
-	background-position: center;
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	color: #ffffff;
-	overflow: hidden;
-	padding: 100px 0 0 0;
-
+	padding: 110px 0 120px 0;
 	}
-
 }
 .panel {	
 	position: relative;
@@ -352,7 +334,7 @@ html, body {
 	
 	&__menu-link {
 		font: 26px/1.4 $text-ff;
-		color: $panel-color;		
+		color: $text-color;		
 	}
 	&__link-pos {
 		margin-left: 0; /* Отступ слева в браузере IE и Opera */
@@ -374,7 +356,7 @@ html, body {
 		}
 		&--text {
 		font: 26px/1.4 $text-ff;
-		color: $panel-color;
+		color: $text-color;
 		margin-top: 65px;
 		}		
 	}
@@ -403,8 +385,6 @@ html, body {
 .line {
 	text-align: center;
 	padding-top: 45px;
-	// z-index: 3;
-	// position: relative;
 }
 .search-p {
   	fill: #5474fd;
@@ -422,21 +402,112 @@ html, body {
   	background-color: $backgr-color;
   	transition: color 5s ease-out;
   	@include transition();
-  	&:hover,
+  			&:hover,
 			&:focus,
 			&:active {
 				fill: currentColor;
 				cursor: pointer; 
-			@include transform-panel();	
+				@include transform-panel();	
 			}
   }
   
+ .slider {
+	&__title {
+		font: 300 26px/1.4 $text-ff;
+		color: $accent-color;
+		padding-bottom: 90px;
+		letter-spacing: 1.5px;
+
+
+	}
+	&__content {
+		min-height: 290px;
+		@include flex-space-between();
+	}
+	&__photo {
+		min-width: 450px;
+		min-height: 290px;
+		
+	}
+	&__link-img {
+		@include transition();
+		&:hover,
+		&:focus,
+		&:active {
+		    opacity: .8;
+
+		}
+
+	}
+	&__image {
+		overflow: hidden;
+		min-width: 450px;
+		min-height: 290px;	
+	}
+	&__text {
+		overflow: hidden;
+		margin-left: -2px;
+		max-height: 290px;
+		color: $text-color;
+		background-color: $backgr-color;
+		padding: 50px;
+
+	}
+	&__link-name {
+	}
+	&__link {
+		text-transform: uppercase;
+		font: 300 26px/1.4 $title-ff;
+		color: $text-color;
+
+	}
+	&__description {
+		
+		font: 300 16px/1.4 $title-ff;
+		text-align: justify;
+	}
+	&__quote {
+		margin: -13px 10px 10px 0;
+		float: left;
+
+	}
+	&__buttons {
+		clear: both;
+		padding-top: 30px; 
+		display: flex;
+		justify-content: flex-end;
+		
+
+	}
+	&__btn {
+	cursor: pointer;
+	margin-left: 15px;
+	border: 1px	solid  $text-color;
+	background-color: $backgr-color;
+	width: 85px;
+	height: 50px;
+	opacity: .3;
+	@include transition();
+	color:  $text-color;
+		&:hover,
+		&:focus, 
+		&:active {
+		outline: none;
+		opacity: .9;
+}
+	}
+}
+
+.fa-quote-left {
+	color: #5474fd;
+}
+
 
 .footer {
 	min-width: 100%;
 	padding: 115px 0 50px;
 	text-align: center;
-	background-color: #333333;
+	background-color: #232323;
 	background-size: cover;
 	color: $accent-color;
 	&__title {
@@ -475,9 +546,7 @@ html, body {
 		}
 	}
 }
-.fa-quote-left {
-	color: #5474fd;
-}
+
 
 
 

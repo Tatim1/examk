@@ -18,7 +18,9 @@
 	cursor: pointer;
 }
 @mixin btn-h-f-a() {
-	background: linear-gradient(45deg, #5474fd 0%, #ffffff 25%, #0a3fff 50%, #ffffff 75%, #496bfe 100%);
+	border: 0;
+	background: linear-gradient(45deg, #5474fd 0%, #0355a7 40%, #1772cd 40%, #badafa 90%);
+	// background: linear-gradient(45deg, #5474fd 0%, #ffffff 25%, #0a3fff 50%, #ffffff 75%, #496bfe 100%);
 				-webkit-transition: all .25s ease;
 	   			   -moz-transition: all .25s ease;
 	    			-ms-transition: all .25s ease;
